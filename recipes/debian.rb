@@ -4,8 +4,7 @@ apt_repository "newrelic" do
   uri "http://apt.newrelic.com/debian/"
   distribution "newrelic"
   components [ "non-free" ]
-  keyserver 'subkeys.pgp.net'
-  key node[:newrelic][:key_id]
+  key "https://download.newrelic.com/548C16BF.gpg"
   action :add
 end
 
